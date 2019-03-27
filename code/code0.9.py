@@ -1,7 +1,8 @@
 
 # coding: utf-8
 
-# In[2]:
+# In[1]:
+
 
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
@@ -46,34 +47,16 @@ sub.to_csv('submission.csv', index=False)
 
 # In[5]:
 
+
 import pandas as pd
 data = pd.read_csv('submission.csv',header=0)
 
 
 # In[8]:
 
+
 import numpy as np
 import matplotlib.pyplot as plt
-get_ipython().magic('pylab inline --no-import-all')
+get_ipython().run_line_magic('pylab', 'inline --no-import-all')
 plt.hist(data['target'])
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
 
